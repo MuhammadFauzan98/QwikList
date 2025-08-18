@@ -51,8 +51,7 @@
 <!--forms-->
 <div class = "conatiner mt-4">
   <h2>Add a Todo</h2>
-  <form action = "/" method="POST"></form>
-    <form>
+  <form action = "/" method="POST">
   <div class="form-group">
     <label for="title">Todo Title</label>
     <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp">
@@ -81,9 +80,9 @@
     {% for todo in allTodo %}
       <tr>
       <th scope="row">{{loop.index}}</th>
-      <td>{{todo.title}}</td>
-      <td>{{todo.desc}}</td>
-      <td>{{todo.date_created}}</td>
+      <td>{{todo[1]}}</td>
+      <td>{{todo[2]}}</td>
+      <td>{{todo[3]}}</td>
     </tr>
     {% endfor %}
     
