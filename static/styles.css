@@ -1,0 +1,87 @@
+/* Define light and dark theme variables */
+:root {
+  --bg-color: #f5f7fa;
+  --text-color: #222;
+  --card-bg: #ffffff;
+  --nav-bg: #ffffff;
+  --nav-text: #007bff;
+  --table-head-bg: #007bff;
+  --table-head-text: #ffffff;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #eaeaea;
+  --card-bg: #1e1e1e;
+  --nav-bg: #1c1c1c;
+  --nav-text: #4dabf7;
+  --table-head-bg: #333;
+  --table-head-text: #f1f1f1;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s ease;
+}
+
+.navbar {
+  background-color: var(--nav-bg) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--nav-text) !important;
+}
+
+.theme-toggle {
+  border: none;
+  background: transparent;
+  color: var(--nav-text);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.container {
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.btn-primary {
+  background-color: var(--nav-text);
+  border: none;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--card-bg);
+}
+
+.table thead {
+  background: var(--table-head-bg);
+  color: var(--table-head-text);
+}
+
+.table tbody tr:hover {
+  background: rgba(0, 123, 255, 0.05);
+}
